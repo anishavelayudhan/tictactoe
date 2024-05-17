@@ -10,8 +10,6 @@ Tic-Tac-Toe is a minimalist rendition of the timeless classic, offering a sleek 
 ## Features
 
 - Player vs. Player mode for friendly competitions
-- Player vs. AI mode for solo gaming sessions
-- Dynamic board updates with smooth animations
 - Clean and responsive design for seamless gameplay
 - Visual cues for wins, ties, and game resets
 
