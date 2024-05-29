@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
 
+
 class TicTacToeGUI:
     def __init__(self, master):
         self.master = master
@@ -34,6 +35,7 @@ class TicTacToeGUI:
 
         self.waiting_for_input = True
 
+    
     def initialize_board(self):
         self.board_frame = tk.Frame(self.master, bg='black', highlightbackground='black', highlightthickness=15)
         self.board_frame.pack(padx=20, pady=20)    
@@ -47,6 +49,7 @@ class TicTacToeGUI:
                 self.buttons[i][j].grid(row=i, column=j)
                 self.buttons[i][j].config(image=self.empty_image)
 
+    
     def initialize_top_bar_frame(self):
         self.top_bar_frame = tk.Frame(self.master, bg='#131313', highlightbackground='#131313', highlightthickness=15)
 
@@ -60,9 +63,11 @@ class TicTacToeGUI:
                                         font=('Arial Bold', 16))
         self.turn_text_label.pack(side='left')
 
+   
     def pack_top_bar_frame(self):
         self.top_bar_frame.pack(fill='both')
 
+    
     def make_move(self, i, j):
         if self.waiting_for_input and self.board[i][j] == ' ':
             self.board[i][j] = self.current_player
@@ -149,9 +154,11 @@ class TicTacToeGUI:
             return True
         return False
 
+   
     def check_tie(self):
         return all(cell != ' ' for row in self.board for cell in row)
 
+    
     def reset_game(self):
         # Destroy the existing board frame
         self.board_frame.destroy()
@@ -171,7 +178,6 @@ class TicTacToeGUI:
         self.update_turn_label()
         
         self.waiting_for_input = True
-
 
 
 def main():
