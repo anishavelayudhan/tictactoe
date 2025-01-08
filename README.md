@@ -30,7 +30,7 @@ git clone https://github.com/anishavelayudhan/tictactoe.git
 ```
 cd tictactoe
 ```
-5. Run the game:
+4. Run the game:
 ```
 python tictactoe.py
 ```
